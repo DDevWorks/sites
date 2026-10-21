@@ -15,7 +15,8 @@ Sitio estático creado con **HTML, CSS y JavaScript nativo**. No necesita framew
     ├── js/main.js
     └── img/
         ├── ddevworks-logo-completo-negro-puro.svg  # Logotipo original
-        └── favicon.svg                             # Símbolo de marca
+        ├── favicon.svg                             # Símbolo de marca
+        └── num-easy-logo.png                       # Añade aquí el logo de Num Easy
 ```
 
 ## Publicar en GitHub Pages
@@ -34,6 +35,7 @@ Sitio estático creado con **HTML, CSS y JavaScript nativo**. No necesita framew
 - Menú móvil, año automático y animaciones de entrada: `assets/js/main.js`.
 - Política y términos: `privacy.html` y `terms.html`.
 - Logo completo y favicon: `assets/img/`.
+- **Logo de Num Easy:** guarda la imagen en `assets/img/num-easy-logo.png`. La tarjeta de la aplicación lo mostrará automáticamente cuando el archivo exista. Si tu imagen es JPG o SVG, cambia la extensión en la ruta `src` de la etiqueta `.num-easy-logo` en `index.html`.
 
 ## Revisión antes de publicar
 
