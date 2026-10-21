@@ -1,33 +1,30 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#050505">
-  <meta property="og:title" content="DDevWorks — Aplicaciones móviles">
-  <meta property="og:description" content="Conoce las aplicaciones publicadas por DDevWorks.">
+  <meta property="og:title" content="DDevWorks — Mobile applications" data-i18n-content="meta.ogTitle">
+  <meta property="og:description" content="Discover applications published by DDevWorks." data-i18n-content="meta.ogDescription">
   <meta property="og:type" content="website">
-  <meta name="description" content="Conoce las aplicaciones móviles publicadas por DDevWorks, un proyecto independiente de desarrollo de software de Damian Rojas Castillo.">
-  <title>DDevWorks — Aplicaciones útiles, hechas con cuidado</title>
+  <meta name="description" content="Discover mobile applications published by DDevWorks, an independent software project by Damian Rojas Castillo." data-i18n-content="meta.description">
+  <title data-i18n="meta.title">DDevWorks — Useful apps, thoughtfully made</title>
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/styles.css">
   <script src="assets/js/main.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <a class="skip-link" href="#contenido" data-i18n="a11y.skip">Skip to content</a>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="DDevWorks, inicio">
-        <img class="brand-logo" src="assets/img/ddevworks-logo-completo-negro-puro.svg" alt="DDevWorks">
-      </a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-        <span class="sr-only">Abrir menú</span><span class="menu-lines" aria-hidden="true"></span>
-      </button>
-      <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
-        <a href="#aplicaciones">Aplicaciones</a>
-        <a href="#acerca">Acerca de</a>
-        <a href="#contacto">Contacto</a>
+      <a class="brand" href="index.html" aria-label="DDevWorks, home" data-i18n-aria="a11y.home"><img class="brand-logo" src="assets/img/ddevworks-logo-completo-negro-puro.svg" alt="DDevWorks"></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu" data-i18n-aria="a11y.openMenu"><span class="sr-only" data-i18n="a11y.openMenu">Open menu</span><span class="menu-lines" aria-hidden="true"></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation" data-i18n-aria="a11y.mainNav">
+        <a href="#aplicaciones" data-i18n="nav.apps">Apps</a>
+        <a href="#acerca" data-i18n="nav.about">About</a>
+        <a href="#contacto" data-i18n="nav.contact">Contact</a>
       </nav>
+      <button class="language-toggle" type="button" data-language-toggle aria-label="Cambiar idioma a español" data-i18n-aria="language.switchToSpanish"><span aria-hidden="true">文A</span><span data-language-label>Español</span></button>
     </div>
   </header>
 
@@ -35,21 +32,21 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="eyebrow-dot"></span> Estudio independiente de desarrollo</p>
-          <h1>Ideas útiles.<br><span class="text-gradient">Experiencias simples.</span></h1>
-          <p class="hero-lead">Este espacio reúne las aplicaciones que publico como desarrollador independiente: herramientas digitales pensadas para ser claras, prácticas y fáciles de usar.</p>
+          <p class="eyebrow"><span class="eyebrow-dot"></span><span data-i18n="hero.eyebrow">Independent software developer</span></p>
+          <h1 data-i18n-html="hero.title">Useful ideas.<br><span class="text-gradient">Simple experiences.</span></h1>
+          <p class="hero-lead" data-i18n="hero.lead">This space brings together the apps I publish as an independent developer: digital tools designed to be clear, practical, and easy to use.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#aplicaciones">Explorar aplicación <span aria-hidden="true">↓</span></a>
-            <a class="button button-secondary" href="mailto:ddevworks@gmail.com">Contactar <span aria-hidden="true">↗</span></a>
+            <a class="button button-primary" href="#aplicaciones"><span data-i18n="hero.explore">Explore apps</span> <span aria-hidden="true">↓</span></a>
+            <a class="button button-secondary" href="mailto:ddevworks@gmail.com"><span data-i18n="hero.contact">Get in touch</span> <span aria-hidden="true">↗</span></a>
           </div>
-          <div class="hero-note"><span class="status-dot"></span> Desarrollo independiente desde Colombia</div>
+          <div class="hero-note"><span class="status-dot"></span><span data-i18n="hero.location">Independent development from Colombia</span></div>
         </div>
-        <div class="hero-art" aria-label="Identidad visual de DDevWorks" role="img">
+        <div class="hero-art" aria-label="DDevWorks visual identity" role="img" data-i18n-aria="hero.artLabel">
           <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
           <div class="art-glow"></div>
-          <div class="logo-tile"><img class="hero-logo" src="assets/img/ddevworks-logo-completo-negro-puro.svg" alt="Logotipo oficial de DDevWorks"><p>Software independiente, hecho con propósito.</p></div>
-          <span class="float-chip chip-code"><span aria-hidden="true">⌘</span> Desarrollo</span>
-          <span class="float-chip chip-mobile"><span aria-hidden="true">▯</span> Mobile first</span>
+          <div class="logo-tile"><img class="hero-logo" src="assets/img/ddevworks-logo-completo-negro-puro.svg" alt="Official DDevWorks logo"><p data-i18n="hero.logoCaption">Independent software, made with purpose.</p></div>
+          <span class="float-chip chip-code"><span aria-hidden="true">⌘</span><span data-i18n="hero.chipDev">Development</span></span>
+          <span class="float-chip chip-mobile"><span aria-hidden="true">▯</span><span data-i18n="hero.chipMobile">Mobile-first</span></span>
           <span class="float-chip chip-spark">✦</span>
         </div>
       </div>
@@ -58,26 +55,26 @@
     <section class="section apps-section" id="aplicaciones">
       <div class="container">
         <div class="section-heading">
-          <div><p class="eyebrow">ENCUENTRA TU HERRAMIENTA</p><h2>Aplicaciones</h2></div>
-          <p>Aplicaciones publicadas y enlaces oficiales para conocerlas, descargarlas y recibir soporte.</p>
+          <div><p class="eyebrow" data-i18n="apps.eyebrow">FIND YOUR TOOL</p><h2 data-i18n="apps.title">Apps</h2></div>
+          <p data-i18n="apps.intro">Published apps and official links to learn more, download them, and get support.</p>
         </div>
         <article class="app-card">
           <div class="app-visual">
-            <div class="num-icon" aria-label="Espacio para el logotipo de Num Easy">
-              <img class="num-easy-logo" src="assets/img/num-easy-logo.png" alt="Logotipo de Num Easy" onerror="this.hidden=true; this.nextElementSibling.hidden=false">
+            <div class="num-icon" aria-label="Num Easy app logo placeholder" data-i18n-aria="apps.logoPlaceholder">
+              <img class="num-easy-logo" src="assets/img/num-easy-logo.png" alt="Num Easy app logo" onerror="this.hidden=true; this.nextElementSibling.hidden=false" data-i18n-alt="apps.logoAlt">
               <span class="num-symbol" hidden>N<span>E</span></span>
               <span class="num-orbit" aria-hidden="true"></span>
             </div>
-            <span class="visual-caption">Útil · Directa · Práctica</span>
+            <span class="visual-caption" data-i18n="apps.caption">Useful · Direct · Practical</span>
           </div>
           <div class="app-details">
-            <div class="app-meta"><span class="tag">Aplicación móvil</span><span class="tag tag-live"><span></span> Disponible en Google Play</span></div>
+            <div class="app-meta"><span class="tag" data-i18n="apps.type">Mobile app</span><span class="tag tag-live"><span></span><span data-i18n="apps.available">Available on Google Play</span></span></div>
             <h3>Num Easy</h3>
-            <p class="app-description">Num Easy es una calculadora sencilla y rápida para realizar cálculos cotidianos desde tu dispositivo móvil.</p>
+            <p class="app-description" data-i18n="apps.description">Num Easy is a simple, fast calculator for everyday calculations on your mobile device.</p>
             <div class="app-links">
-              <a class="button button-primary" href="https://play.google.com/store/apps/details?id=com.ddevworks.numeasy&amp;pcampaignid=web_share" target="_blank" rel="noopener noreferrer">Ver en Google Play <span aria-hidden="true">↗</span></a>
-              <a class="text-link" href="privacy.html">Política de privacidad <span aria-hidden="true">→</span></a>
-              <a class="text-link" href="terms.html">Términos y condiciones <span aria-hidden="true">→</span></a>
+              <a class="button button-primary" href="https://play.google.com/store/apps/details?id=com.ddevworks.numeasy&amp;pcampaignid=web_share" target="_blank" rel="noopener noreferrer"><span data-i18n="apps.googlePlay">View on Google Play</span> <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="privacy.html"><span data-i18n="legal.privacy">Privacy policy</span> <span aria-hidden="true">→</span></a>
+              <a class="text-link" href="terms.html"><span data-i18n="legal.terms">Terms and conditions</span> <span aria-hidden="true">→</span></a>
             </div>
           </div>
         </article>
@@ -86,15 +83,15 @@
 
     <section class="section about-section" id="acerca">
       <div class="container about-grid">
-        <div><p class="eyebrow">ACERCA DEL DESARROLLADOR</p><h2>Hecho con curiosidad,<br><span class="text-gradient">cuidado y propósito.</span></h2></div>
-        <div class="about-copy"><p>DDevWorks es la marca personal de desarrollo de software de <strong>Damian Rojas Castillo</strong>, desde Colombia. Este sitio presenta mis propios proyectos y aplicaciones publicadas.</p><p>Mi enfoque es construir herramientas digitales útiles, cuidar la experiencia de uso y mejorar cada proyecto con atención a los detalles.</p><p class="about-note">Aquí encontrarás mis aplicaciones y proyectos publicados, junto con sus enlaces oficiales y opciones de soporte.</p></div>
+        <div><p class="eyebrow" data-i18n="about.eyebrow">ABOUT THE DEVELOPER</p><h2 data-i18n-html="about.title">Made with curiosity,<br><span class="text-gradient">care and purpose.</span></h2></div>
+        <div class="about-copy"><p data-i18n-html="about.p1">DDevWorks is the personal software development brand of <strong>Damian Rojas Castillo</strong>, based in Colombia. This site showcases my own published projects and apps.</p><p data-i18n="about.p2">My focus is building useful digital tools, caring about the user experience, and improving each project with attention to detail.</p><p class="about-note" data-i18n="about.note">Here you will find my published apps and projects, with their official links and support options.</p></div>
       </div>
     </section>
 
     <section class="contact-section" id="contacto">
       <div class="container contact-panel">
         <div class="contact-icon" aria-hidden="true">✉</div>
-        <div class="contact-copy"><p class="eyebrow">¿NECESITAS AYUDA?</p><h2>Hablemos.</h2><p>¿Tienes una pregunta sobre una aplicación publicada, encontraste un problema o quieres compartir una sugerencia? Puedes escribirme por correo.</p></div>
+        <div class="contact-copy"><p class="eyebrow" data-i18n="contact.eyebrow">NEED HELP?</p><h2 data-i18n="contact.title">Let's talk.</h2><p data-i18n="contact.description">Have a question about a published app, found an issue, or want to share a suggestion? Send me an email.</p></div>
         <a class="button button-light" href="mailto:ddevworks@gmail.com">ddevworks@gmail.com <span aria-hidden="true">↗</span></a>
       </div>
     </section>
@@ -102,11 +99,11 @@
 
   <footer class="site-footer">
     <div class="container footer-main">
-      <a class="brand footer-brand" href="index.html" aria-label="DDevWorks, inicio"><img class="brand-logo footer-logo" src="assets/img/ddevworks-logo-completo-negro-puro.svg" alt="DDevWorks"></a>
-      <p>Aplicaciones útiles, hechas con cuidado.</p>
-      <nav aria-label="Enlaces legales"><a href="privacy.html">Privacidad</a><a href="terms.html">Términos y condiciones</a><a href="mailto:ddevworks@gmail.com">Soporte</a></nav>
+      <a class="brand footer-brand" href="index.html" aria-label="DDevWorks, home" data-i18n-aria="a11y.home"><img class="brand-logo footer-logo" src="assets/img/ddevworks-logo-completo-negro-puro.svg" alt="DDevWorks"></a>
+      <p data-i18n="footer.tagline">Useful apps, thoughtfully made.</p>
+      <nav aria-label="Legal links" data-i18n-aria="a11y.legalNav"><a href="privacy.html" data-i18n="legal.privacy">Privacy</a><a href="terms.html" data-i18n="legal.terms">Terms and conditions</a><a href="mailto:ddevworks@gmail.com" data-i18n="footer.support">Support</a></nav>
     </div>
-    <div class="container footer-bottom"><span>© <span data-current-year>2026</span> DDevWorks</span><span>Colombia <span aria-hidden="true">·</span> Desarrollado con dedicación</span></div>
+    <div class="container footer-bottom"><span>© <span data-current-year>2026</span> DDevWorks</span><span data-i18n-html="footer.location">Colombia <span aria-hidden="true">·</span> Made with care</span></div>
   </footer>
 </body>
 </html>
